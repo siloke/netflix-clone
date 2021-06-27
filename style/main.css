@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --red: #E50914;
+    --black: #141414;
+    --grey: #AAA;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--black);
+    color: white;
+}
+
+/*Header styles*/
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    margin-left: 20px;
+    width: 10rem;
+}
+.nav {
+    margin-right: 20px;
+}
+.nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--grey);
+}
+.nav a:hover {
+    color: #FFF;
+}
+.bi-list {
+    display: none;
+}
+
+/*Showcase section*/
+.showcase {
+    height: 700px;
+    background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('/img/brbad.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.showcase .container {
+    margin-left: 20px;
+}
+.showcase .title {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.showcase .description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.btn-watch {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 2.4px;
+}
+.fas {
+    margin-right: 6px;
+}
+.btn-info {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    background-color: rgba(79, 79, 79, 0.60);
+    color: white;
+}
+.btn {
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 22px;
+    transition: .2s ease all;
+}
+.btn:hover {
+    background-color: var(--red);
+    color: white;
+    cursor: pointer;
+}
+
+/*Carousel*/
+.carousel-movies {
+    margin-top: 20px;
+}
+.box {
+    width: 50%;
+    height: 50%;
+    display: block;
+}
